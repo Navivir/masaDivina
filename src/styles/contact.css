@@ -5,7 +5,7 @@
 
 .texto-cool {
   font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
-  font-size: 5rem;
+  font-size: 4rem !important;
   font-weight: 600;
   color: #1d4ed8;
   background: linear-gradient(90deg, #F5E3BF, #712518);
