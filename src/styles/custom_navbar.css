@@ -1,0 +1,60 @@
+/* ---------------------------------------------------- */
+/* ESTILOS DE MÓVIL (Por defecto: flex-col) */
+/* ---------------------------------------------------- */
+
+.custom-navbar-list-container ul {
+  display: flex !important;
+  flex-direction: column !important;
+  margin-top: 1rem !important;
+  padding: 0 !important;
+}
+
+.custom-navbar-list-container ul li {
+  margin-bottom: 0.5rem !important;
+  margin-left: 0 !important;
+}
+
+/* Color inicial de los links */
+.custom-navbar-list-container a {
+  color: black; /* texto negro */
+  font-weight: 600; /* opcional: negrita */
+  transition: color 0.3s;
+}
+
+/* Color al pasar el mouse */
+.custom-navbar-list-container a:hover {
+  color: #712518; /* por ejemplo, un rojo oscuro */
+}
+
+/* ---------------------------------------------------- */
+/* ESTILOS DE ESCRITORIO (md breakpoint: 768px y superior - flex-row) */
+/* ---------------------------------------------------- */
+@media (min-width: 768px) {
+  .custom-navbar-list-container {
+    align-self: center !important;
+    width: auto !important;
+  }
+
+  .custom-navbar-list-container ul {
+    flex-direction: row !important;
+    margin-top: 0 !important;
+    align-items: center !important;
+  }
+
+  .custom-navbar-list-container ul li {
+    margin-left: 2rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Color inicial de los links */
+  .custom-navbar-list-container a {
+    color: black; /* texto negro */
+    font-weight: 600; /* opcional: negrita */
+    transition: color 0.3s;
+  }
+
+  /* Color al pasar el mouse */
+  .custom-navbar-list-container a:hover {
+    color: #712518; /* por ejemplo, un rojo oscuro */
+  }
+}

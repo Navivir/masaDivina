@@ -1,0 +1,126 @@
+.full-screen-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 60vh;
+  margin-top: 1rem;
+  margin-top: 50px;
+}
+
+@media (min-width: 1024px) {
+  .full-screen-form {
+    min-height: 800px;
+  }
+}
+
+
+@media (max-width: 1023px) and (min-width: 640px) {
+  .full-screen-form {
+    min-height: 600px;
+  }
+}
+
+
+@media (max-width: 639px) {
+  .full-screen-form {
+    min-height: 500px;
+    margin-top: 1rem;
+  }
+}
+
+.button-cust {
+  background: linear-gradient(90deg, #F5E3BF 0%, #712518 100%);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.button-cust:hover {
+  background: linear-gradient(90deg, #712518 0%, #F5E3BF 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+
+.input-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #712518;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.input-cust,
+.textarea-cust {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #F5E3BF;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #712518 !important;
+  background-color: #F5E3BF !important;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+
+.input-cust:hover,
+.textarea-cust:hover {
+  border: 2px solid #712518;
+  box-shadow: 0 0 8px rgba(113,37,24,0.5);
+}
+
+
+.input-cust:focus,
+.textarea-cust:focus {
+  border: 2px solid #712518;
+  box-shadow: 0 0 10px rgba(113,37,24,0.7);
+}
+
+.input-cust::placeholder,
+.textarea-cust::placeholder {
+  color: #71251888 !important; 
+}
+
+
+.textarea-cust {
+  resize: none;
+}
+
+
+.input-cust input {
+  background-color: #F5E3BF !important;
+  color: #712518 !important;
+  border: 2px solid #F5E3BF !important;
+}
+
+
+.input-cust input::placeholder {
+  color: #71251888 !important;
+}
+
+
+.input-cust input:hover {
+  border-color: #712518 !important;
+  box-shadow: 0 0 8px rgba(113, 37, 24, 0.5) !important;
+}
+
+
+.input-cust input:focus {
+  border-color: #712518 !important;
+  box-shadow: 0 0 10px rgba(113, 37, 24, 0.7) !important;
+
+
+  --tw-ring-color: transparent !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+  box-shadow: none !important;
+}
