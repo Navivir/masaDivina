@@ -1,7 +1,7 @@
 .section-text-h2 {
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #712518;
+  color: #C7A86D;
   font-size: 2.25rem;
   line-height: 2.5rem; 
 }
@@ -9,6 +9,26 @@
 .section-text-p {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: #F5E3BF;
+  color: #F2F2F2;
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .section-text-h2 {
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #C7A86D;
+  font-size: 1.25rem;
+  line-height: 2.5rem; 
+}
+
+.section-text-p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #F2F2F2;
+  margin-bottom: 20px;
+}
+
+  
+
 }

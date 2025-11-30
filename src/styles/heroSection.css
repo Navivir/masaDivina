@@ -1,8 +1,8 @@
 .hero-section {
-  background: #0b0b0b; /* o transparente si quieres */
+  background: #0a0a0a;
   color: #333;
   padding: 2rem;
-  position: relative; /* para no interferir con navbar */
+  position: relative;
   z-index: 1;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -25,13 +25,13 @@
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #712518;
+  color: #c7a86d;
 }
 
 .hero-text p {
   font-size: 1.125rem;
   line-height: 1.6;
-  color: #F5E3BF;
+  color: #f2f2f2;
 }
 
 .hero-image img {
@@ -40,8 +40,7 @@
   display: block;
 }
 
-/* Escritorio */
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .hero-container {
     flex-direction: row;
     justify-content: space-between;
@@ -56,5 +55,18 @@
 
   .hero-image {
     max-width: 45%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    background: #0a0a0a;
+    color: #333;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

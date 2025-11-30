@@ -1,6 +1,3 @@
-/* ---------------------------------------------------- */
-/* ESTILOS DE MÓVIL (Por defecto: flex-col) */
-/* ---------------------------------------------------- */
 
 .custom-navbar-list-container ul {
   display: flex !important;
@@ -14,21 +11,19 @@
   margin-left: 0 !important;
 }
 
-/* Color inicial de los links */
+
 .custom-navbar-list-container a {
-  color: black; /* texto negro */
-  font-weight: 600; /* opcional: negrita */
+  color: black; 
+  font-weight: 600;
   transition: color 0.3s;
 }
 
-/* Color al pasar el mouse */
+
 .custom-navbar-list-container a:hover {
-  color: #712518; /* por ejemplo, un rojo oscuro */
+  color: #712518; 
 }
 
-/* ---------------------------------------------------- */
-/* ESTILOS DE ESCRITORIO (md breakpoint: 768px y superior - flex-row) */
-/* ---------------------------------------------------- */
+
 @media (min-width: 768px) {
   .custom-navbar-list-container {
     align-self: center !important;
@@ -46,15 +41,14 @@
     margin-bottom: 0 !important;
   }
 
-  /* Color inicial de los links */
+
   .custom-navbar-list-container a {
-    color: black; /* texto negro */
-    font-weight: 600; /* opcional: negrita */
+    color: black;
+    font-weight: 600;
     transition: color 0.3s;
   }
 
-  /* Color al pasar el mouse */
   .custom-navbar-list-container a:hover {
-    color: #712518; /* por ejemplo, un rojo oscuro */
+    color: #712518;
   }
 }

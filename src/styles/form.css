@@ -30,8 +30,8 @@
 }
 
 .button-cust {
-  background: linear-gradient(90deg, #F5E3BF 0%, #712518 100%);
-  color: #ffffff;
+  background: linear-gradient(90deg, #F5E3BF 0%, #C7A86D 100%);
+  color: #000000;
   font-weight: 600;
   font-size: 1rem;
   padding: 0.75rem 1.5rem;
@@ -43,19 +43,9 @@
 }
 
 .button-cust:hover {
-  background: linear-gradient(90deg, #712518 0%, #F5E3BF 100%);
+  background: linear-gradient(90deg, #C7A86D 0%, #C7A86D 100%);
   transform: translateY(-2px);
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
-}
-
-
-.input-label {
-  display: block;
-  margin-bottom: 0.25rem;
-  font-weight: 600;
-  color: #712518;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 

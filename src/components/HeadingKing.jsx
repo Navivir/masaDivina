@@ -19,7 +19,7 @@ export default function HeadingKing({
 
           <a href={linkTo}>
             <button
-              className="text-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2"
+              className="text-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 button-cust"
               style={{ backgroundColor: "#F5E3BF" }}
             >
               RESERVAR

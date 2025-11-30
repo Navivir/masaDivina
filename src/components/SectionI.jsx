@@ -1,3 +1,4 @@
+
 export default function SectionI({
   title,
   paragraph1,
@@ -24,7 +25,7 @@ export default function SectionI({
 
 
         <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400 lg:w-1/2">
-          <h2 className="section-text-h2">
+          <h2 className="section-text-h2 mergen-fone">
             {title}
           </h2>
           <p className="section-text-p">{paragraph1}</p>

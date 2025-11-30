@@ -8,9 +8,7 @@ export default function ContactForm() {
     <div className="full-screen-form">
       <form className="w-full max-w-md flex flex-col items-center justify-center gap-4 backgroundHelp">
         <div className="w-full text-center">
-          <Label htmlFor="email4" className="input-label">
-            Tu email
-          </Label>
+
           <TextInput
             id="email4"
             type="email"
@@ -24,21 +22,19 @@ export default function ContactForm() {
         </div>
 
         <div className="w-full text-center">
-          <Label htmlFor="comment" className="input-label">
-            Tu mensaje
-          </Label>
+
           <Textarea
             id="comment"
             placeholder="Escribenos..."
             required
-            rows={5}
+            rows={8}
             sizing="lg"
             className="textarea-cust"
           />
         </div>
 
         <Button type="submit" className="button-cust">
-          Send Message
+          Enviar
         </Button>
       </form>
     </div>
