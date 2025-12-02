@@ -1,7 +1,7 @@
 .full-image-container {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/pizza.jpeg");
+  background-image: url("../assets/portada.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,26 +17,32 @@
 }
 
 .texto-cool {
-  font-family: "Pacifico", "Brush Script MT", cursive;
-  font-size: 4.5rem !important;
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
   font-weight: 400;
-  color: #ffd86b;
-  text-transform: none;
-
-  text-shadow: 0 0 6px rgba(255, 230, 150, 0.9),
-    0 0 12px rgba(255, 200, 90, 0.7), 0 0 20px rgba(255, 180, 60, 0.5),
-    1px 1px 4px rgba(0, 0, 0, 0.4);
-
+  color: #D5B892;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
+
+  -webkit-text-stroke: 1px #E6A63A;
+
+  animation: glowBorder 3s ease-in-out infinite;
 }
 
-.texto-cool:hover {
-  transform: scale(1.03);
-  text-shadow: 0 0 10px rgba(255, 230, 150, 1), 0 0 20px rgba(255, 200, 90, 1),
-    0 0 30px rgba(255, 180, 60, 1), 0 0 45px rgba(255, 160, 40, 0.9);
-  cursor: pointer;
+
+@keyframes glowBorder {
+  0%, 100% {
+    text-shadow: 
+      0 0 3px rgba(230, 166, 58, 0.25),
+      0 0 6px rgba(230, 166, 58, 0.15);
+  }
+  50% {
+    text-shadow: 
+      0 0 5px rgba(230, 166, 58, 0.4),
+      0 0 10px rgba(230, 166, 58, 0.25);
+  }
 }
+
+
 .margins-king {
   margin: 20px;
 }
@@ -57,19 +63,7 @@
   margin: 3rem 0;
   line-height: 1.6;
   color: #f2f2f2;
-  font-size: 1.8rem;
-}
-
-.color-texto-titulo {
-  font-size: 3rem;
-  color: #712518;
-  font-weight: bold;
-}
-
-.color-texto-titulo-extra {
-  font-size: 3rem;
-  color: #f5e3bf;
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .button-cust {
@@ -102,26 +96,10 @@
   }
 
   .texto-cool {
-    font-family: "Pacifico", "Brush Script MT", cursive;
-    font-size: 1.5rem !important;
-    font-weight: 400;
-    color: #ffd86b;
-    text-transform: none;
+  font-size: 1.8rem;
 
-    text-shadow: 0 0 6px rgba(255, 230, 150, 0.9),
-      0 0 12px rgba(255, 200, 90, 0.7), 0 0 20px rgba(255, 180, 60, 0.5),
-      1px 1px 4px rgba(0, 0, 0, 0.4);
+}
 
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-  }
-
-  .texto-cool:hover {
-    transform: scale(1.03);
-    text-shadow: 0 0 10px rgba(255, 230, 150, 1), 0 0 20px rgba(255, 200, 90, 1),
-      0 0 30px rgba(255, 180, 60, 1), 0 0 45px rgba(255, 160, 40, 0.9);
-    cursor: pointer;
-  }
 
   .parrafo1 {
     text-align: center;
@@ -129,7 +107,7 @@
     margin: 3rem 0;
     line-height: 1.6;
     color: #f2f2f2;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
   }
 
   .mergen-fone {

@@ -1,6 +1,6 @@
 import "../styles/section.css";
 
-export default function SectionD({ title, paragraph1, paragraph2, image, imageClassName = "", className = "" }) {
+export default function SectionD({ title, paragraph1, paragraph2, paragraph3, image, imageClassName = "", className = "" }) {
   return (
     <section className={`bg-gradient-to-b from-white to-gray-100 dark:from-gray-900 dark:to-gray-800 py-40${className}`}>
       <div className="flex flex-col lg:flex-row items-center justify-between px-8 mx-auto max-w-screen-xl gap-12">
@@ -14,6 +14,9 @@ export default function SectionD({ title, paragraph1, paragraph2, image, imageCl
           </p>
           <p className="section-text-p">
             {paragraph2}
+          </p>
+          <p className="section-text-p">
+            {paragraph3}
           </p>
         </div>
 

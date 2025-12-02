@@ -3,8 +3,8 @@ import Footer from "../components/Footer";
 import '../styles/products.css';
 
 import cartaComida from "../assets/carta-comida.webp";
-import cartaBebidas from "../assets/carta-bebidas.webp";
-import cartaVinos from "../assets/carta-vinos.webp";
+//import cartaBebidas from "../assets/carta-bebidas.webp";
+//import cartaVinos from "../assets/carta-vinos.webp";
 
 export default function Products() {
 
@@ -14,7 +14,7 @@ export default function Products() {
 
       <main className="flex flex-col items-center text-center margins-king px-6 pt-40 pb-40 space-y-40">
         <h1 className="texto-cool">
-          Nuestras Cartas
+          Nuestra Carta
         </h1>
 
         <div className="carta-container">
@@ -25,7 +25,7 @@ export default function Products() {
           />
         </div>
 
-        <div className="carta-container">
+        {/* <div className="carta-container">
           <img 
             src={cartaBebidas} 
             alt="Carta de bebidas" 
@@ -39,7 +39,7 @@ export default function Products() {
             alt="Carta de vinos" 
             className="carta-img"
           />
-        </div>
+        </div> */}
 
       </main>
 

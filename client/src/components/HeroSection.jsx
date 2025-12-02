@@ -6,8 +6,8 @@ export default function HeroSection({ title, paragraph, image }) {
       <div className="hero-container">
 
         <div className="hero-text">
-          <h1>{title}</h1>
-          <p>{paragraph}</p>
+          <h1 className='section-text-h2'>{title}</h1>
+          <p className='section-text-p'>{paragraph}</p>
         </div>
 
         <div className="hero-image">

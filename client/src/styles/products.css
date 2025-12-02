@@ -1,0 +1,27 @@
+.carta-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.carta-img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .carta-container {
+    margin-top: 20px;
+  }
+
+  .carta-img {
+    max-width: 100%;
+  }
+  
+}

@@ -72,7 +72,7 @@ export default function Home() {
         <HeadingKing
           title="Reserva tu mesa hoy"
           paragraph1="No esperes más para vivir la experiencia Masa Divina. Reserva tu mesa y déjate llevar por el sabor."
-          linkTo="https://masadivina.carrd.co/"
+          linkTo="https://www.google.com/maps/reserve/v/dine/c/kN4BzCV7GcM?source=pa&opi=89978449&hl=es-ES&gei=wUgcaaLkF9uI7NYP77T7GA&sourceurl=https://www.google.com/service/ViewerOrchestratorService/FetchViewer?hl%3Des%26gl%3Des"
         />
         <div className="h-20"></div>
       </main>

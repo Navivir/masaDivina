@@ -17,7 +17,7 @@ export default function HeadingKing({
             {paragraph1}
           </p>
 
-          <a href={linkTo}>
+          <a href={linkTo} target="_blank" rel="noopener noreferrer">
             <button
               className="text-gray-900 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 button-cust"
               style={{ backgroundColor: "#F5E3BF" }}
