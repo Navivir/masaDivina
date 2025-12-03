@@ -38,16 +38,16 @@ export default function Component() {
           <div>
             <FooterTitle title="Acerca de" className="text-black" />
             <FooterLinkGroup col>
-              <FooterLink href="#" className="text-black">Sobre nosotros</FooterLink>
-              <FooterLink href="#" className="text-black">Carta</FooterLink>
+              <FooterLink href="/about" className="text-black">Sobre nosotros</FooterLink>
+              <FooterLink href="/products" className="text-black">Carta</FooterLink>
             </FooterLinkGroup>
           </div>
 
           <div>
             <FooterTitle title="Siguenos" className="text-black" />
             <FooterLinkGroup col>
-              <FooterLink href="#" className="text-black">Instagram</FooterLink>
-              <FooterLink href="#" className="text-black">Facebook</FooterLink>
+              <FooterLink href="https://www.instagram.com/masadivina.badalona/" target="_blank" className="text-black">Instagram</FooterLink>
+              <FooterLink href="https://www.facebook.com/p/Masa-Divina-61582653171958/" target="_blank" className="text-black">Facebook</FooterLink>
             </FooterLinkGroup>
           </div>
 
@@ -63,8 +63,8 @@ export default function Component() {
         <FooterDivider className="my-6 border-gray-700" />
 
         <div className="flex justify-center space-x-8 mt-4">
-          <FooterIcon href="#" icon={BsFacebook} className="text-black" />
-          <FooterIcon href="#" icon={BsInstagram} className="text-black" />
+          <FooterIcon href="https://www.facebook.com/p/Masa-Divina-61582653171958/" target="_blank" icon={BsFacebook} className="text-black" />
+          <FooterIcon href="https://www.instagram.com/masadivina.badalona/" target="_blank" icon={BsInstagram} className="text-black" />
      
    
         </div>

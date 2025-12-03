@@ -9,8 +9,8 @@ import nachos from "../assets/nachos.webp";
 import tartar from "../assets/tartar.webp";
 import horno from "../assets/horno.webp";
 import candela from "../assets/candela.webp";
-import local from "../assets/local.webp";
-import romana from "../assets/romana.webp";
+import local from "../assets/local.jpg";
+import varias from "../assets/varias.webp";
 import cliente from "../assets/cliente.webp";
 
 export default function Home() {
@@ -55,8 +55,8 @@ export default function Home() {
         <SectionI
           title="Pizza artesanal de verdad."
           paragraph1="Masa madre, ingredientes seleccionados y cocción en horno de fuego. Auténtica pizza romana hecha a mano, bocado a bocado."
-          paragraph2="Ven a probar el sabor que nos ha convertido en un clásico de Badalona."
-          image1={romana}
+          paragraph2="Ven a probar el sabor que nos ha convertido en un referente de Badalona."
+          image1={varias}
           image2={cliente}
         />
 

@@ -9,7 +9,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 10px;
-
 }
 
 .backgroundHelp {
@@ -88,8 +87,9 @@
 
 @media (max-width: 768px) {
   .full-image-container {
-    background-size: auto;
+    
     border-radius: 10px;
+    background-image: url("../assets/romana.webp");
   }
   .paddingGeneral {
     padding: 15px;

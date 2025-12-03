@@ -43,7 +43,10 @@ const paragraph2 = (
         />
         <HeroSection
           title="Equipo profesional, corazón artesanal."
-          paragraph="Trabajamos con ingredientes de primera, técnicas de tradición napolitana y un respeto absoluto por el fuego, la masa y el oficio."
+          paragraph="Nuestro equipo es pequeño, cercano y experto. No buscamos perfección industrial. Buscamos sabor real."
+          paragraph2="Trabajamos con ingredientes de primera, 
+          técnicas de tradición napolitana y un respeto absoluto por el fuego, la masa y el oficio."
+          paragraph3="Cada pizza es personal. Cada detalle importa. Y cada cliente, más todavía."
           image={pizzero}
         />
       </main>
