@@ -27,6 +27,15 @@
   animation: glowBorder 3s ease-in-out infinite;
 }
 
+.section-text-white-h2 {
+  
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: #f2f2f2;
+  font-size: 2.25rem;
+  line-height: 2.5rem; 
+}
+
 
 @keyframes glowBorder {
   0%, 100% {
@@ -100,7 +109,6 @@
 
 }
 
-
   .parrafo1 {
     text-align: center;
     white-space: pre-line;
@@ -121,4 +129,13 @@
   .margins-king-soft {
     margin-bottom: 25px;
   }
+
+  .section-text-white-h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+  font-size: 1.5rem;
+  line-height: 2.5rem; 
+}
+
 }

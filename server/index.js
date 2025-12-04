@@ -26,7 +26,7 @@ app.post("/send", async (req, res) => {
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
       to: process.env.GMAIL_USER,
-      subject: "Nuevo mensaje web",
+      subject: "Nuevo mensaje desde Web Masa Divina",
       html: `<p><b>Nombre:</b> ${name}</p>
              <p><b>Email:</b> ${email}</p>
              <p><b>Mensaje:</b> ${message}</p>`,
@@ -38,4 +38,4 @@ app.post("/send", async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT || 3001, () => console.log("Backend listo"));
+app.listen(process.env.PORT || 3001, () => console.log("Backend en funcionamiento"));

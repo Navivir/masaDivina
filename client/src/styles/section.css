@@ -13,6 +13,16 @@
   margin-bottom: 20px;
 }
 
+.cookie-btn {
+  background-color: #D5B892;
+  color: #000000;
+  transition: background-color 0.2s;
+}
+
+.cookie-btn:hover {
+  background-color: #C7A86D;
+}
+
 @media (max-width: 768px) {
   .section-text-h2 {
   font-weight: 800;

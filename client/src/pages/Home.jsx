@@ -21,20 +21,13 @@ export default function Home() {
       <main className="flex-1 flex flex-col items-center text-center backgroundHelp pb-60 paddingGeneral">
         <div className="full-container-home-section">
           <h1 className="texto-cool margins-king-soft">
-            El fuego nos da sabor. La masa nos da alma. Tú nos das sentido.
+            Pizzería artesanal en Badalona.
           </h1>
           <div className="full-image-container"></div>
         </div>
-
-        <p className="parrafo1">
-          En Masa Divina no solo hacemos pizza: honramos un ritual.
-          <br />
-          Fermentamos la masa 72 horas, cocinamos en horno Valoriani
-          <br />
-          y cuidamos cada detalle como si cocinaras para los tuyos.
-          <br />
-          Aquí no eres cliente: eres familia.
-        </p>
+        <h2 className="section-text-white-h2">
+          El fuego nos da sabor. La masa nos da alma. Tú nos das sentido.
+        </h2>
 
         <SectionI
           title="Cuidamos lo que comes."
