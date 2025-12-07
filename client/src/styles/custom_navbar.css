@@ -23,6 +23,21 @@
   color: #712518; 
 }
 
+.language-switcher {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-align: left; 
+}
+
+.language-switcher:hover {
+  color: #712518;
+}
+
 
 @media (min-width: 768px) {
   .custom-navbar-list-container {

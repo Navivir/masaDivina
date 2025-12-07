@@ -12,6 +12,8 @@ import candela from "../assets/candela.webp";
 import local from "../assets/local.jpg";
 import varias from "../assets/varias.webp";
 import cliente from "../assets/cliente.webp";
+import masa from "../assets/masa.webp";
+import burrata from "../assets/burrata.webp";
 
 export default function Home() {
   return (
@@ -29,17 +31,22 @@ export default function Home() {
           El fuego nos da sabor. La masa nos da alma. Tú nos das sentido.
         </h2>
 
-        <SectionI
-          title="Cuidamos lo que comes."
-          paragraph1="Solo trabajamos con ingredientes frescos, locales y de temporada."
-          paragraph2="Del campo a nuestro horno. Del horno a tu mesa. Sabor real, sin atajos."
+        <Section
           image1={horno}
           image2={candela}
         />
 
+        <SectionI
+          title="Cuidamos lo que comes."
+          paragraph1="Solo trabajamos con ingredientes frescos, locales y de temporada."
+          paragraph2="Del campo al horno. Del horno a tu mesa. Sabor real, sin atajos."
+          image1={masa}
+          image2={burrata}
+        />
+
         <Section
-          title="Más que Pizza"
-          paragraph1="En Masa Divina creamos sabores: pizzas, platos caseros y antojos únicos, siempre con calidad y sabor irresistible."
+          title="Más que Pizza."
+          paragraph1="En Masa Divina creamos sabores: pizzas, platos y antojos artesanales, siempre con calidad y sabor irresistible."
           paragraph2="Disfruta de una experiencia que nos distingue."
           image1={tartar}
           image2={nachos}
@@ -47,16 +54,13 @@ export default function Home() {
 
         <SectionI
           title="Pizza artesanal de verdad."
-          paragraph1="Masa madre, ingredientes seleccionados y cocción en horno de fuego. Auténtica pizza romana hecha a mano, bocado a bocado."
+          paragraph1="Masa madre, ingredientes seleccionados y cocción en horno de fuego. Auténtica pizza romana hecha a mano."
           paragraph2="Ven a probar el sabor que nos ha convertido en un referente de Badalona."
           image1={varias}
           image2={cliente}
         />
 
-        <SectionD
-          title="Pasión por la pizza."
-          aragraph1="Hecho con pasión desde el primer día. Creciendo para convertirnos en tu pizzería de confianza en Badalona."
-          paragraph2="Cada masa, cada salsa y cada ingrediente está hecho con dedicación. Porque las mejores tradiciones también empiezan así: desde cero, pero con alma."
+        <SectionD      
           image={local}
           imageClassName="w-[1200px] h-[700px] object-cover mb-20"
           className="my-20"

@@ -5,7 +5,7 @@ import "../styles/cookies.css";
 
 export default function CookiesPolicy() {
   return (
-    <div className="min-h-screen flex items-center justify-center backgroundHelp">
+    <div className="min-h-screen flex items-center justify-center backgroundHelp p-4">
       <div
         className="rounded-lg shadow-xl max-w-4xl w-full p-8 flex flex-col gap-6"
         style={{ backgroundColor: "#F5E3BF" }}
