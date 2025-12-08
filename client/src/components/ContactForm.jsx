@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "../styles/form.css";
-import { Label, Textarea, TextInput, Button } from "flowbite-react";
+import { Textarea, TextInput, Button } from "flowbite-react";
 import { HiMail } from "react-icons/hi";
+import emailjs from "emailjs-com";
 
 export default function ContactForm() {
   const [email, setEmail] = useState("");
@@ -9,29 +10,42 @@ export default function ContactForm() {
   const [name, setName] = useState("");
   const [status, setStatus] = useState("");
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("Enviando...");
 
-    try {
-      const res = await fetch("http://localhost:3001/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, message }),
-      });
 
-      const data = await res.json();
-      if (data.ok) {
-        setStatus("Correo enviado correctamente ✅");
-        setEmail("");
-        setMessage("");
-        setName("");
-      } else {
-        setStatus("Error al enviar correo: " + data.error);
-      }
-    } catch (err) {
-      setStatus("Error de conexión: " + err.message);
-    }
+    const templateParams = {
+      name: name,
+      email: email,
+      message: message,
+      time: new Date().toLocaleString('es-ES', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      })
+    };
+
+
+    emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then((response) => {
+      console.log("Éxito:", response);
+      setStatus("Correo enviado correctamente ✅");
+      setEmail("");
+      setMessage("");
+      setName("");
+    })
+    .catch((err) => {
+      console.error("Error completo:", err);
+      setStatus("Error al enviar correo ❌");
+    });
   };
 
   return (
@@ -43,6 +57,7 @@ export default function ContactForm() {
         <div className="w-full text-center">
           <TextInput
             id="name"
+            name="name"
             type="text"
             placeholder="Tu nombre"
             required
@@ -52,10 +67,10 @@ export default function ContactForm() {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-
         <div className="w-full text-center">
           <TextInput
             id="email4"
+            name="email"
             type="email"
             icon={HiMail}
             placeholder="tucorreo@gmail.com"
@@ -66,10 +81,10 @@ export default function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-
         <div className="w-full text-center">
           <Textarea
             id="comment"
+            name="message"
             placeholder="Escribenos..."
             required
             rows={8}
@@ -79,11 +94,9 @@ export default function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
           />
         </div>
-
         <Button type="submit" className="button-cust">
           Enviar
         </Button>
-
         <p
           className={`mt-2 ${
             status.includes("Error") ? "text-red-500" : "text-white"

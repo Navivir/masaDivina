@@ -26,12 +26,12 @@ const customCollapseTheme = {
 const linkReservar =
   "https://www.google.com/maps/reserve/v/dine/c/kN4BzCV7GcM";
 const linkLlegar =
-  "https://www.google.com/maps/dir//Masa+divina";
+  "https://www.google.com/maps/dir//Masa+divina+%7C+Pizzer%C3%ADa+artesanal+en+Badalona,+Pla%C3%A7a+del+Vaixell+Maria+Assumpta,+3,+local+2-3,+08912+Badalona,+Barcelona/@41.4076331,2.106493,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12a4bb8da0fd280b:0x1134ab2a79b7d58a!2m2!1d2.2423987!2d41.4401176?entry=ttu&g_ep=EgoyMDI1MTIwMS4wIKXMDSoASAFQAw%3D%3D";
 
 export default function CustomNavbar() {
   const [isLanguageModalOpen, setIsLanguageModalOpen] = useState(false);
 
-  const openLanguageModal = () => setIsLanguageModalOpen(true);
+  // const openLanguageModal = () => setIsLanguageModalOpen(true);
   const closeLanguageModal = () => setIsLanguageModalOpen(false);
 
   return (
@@ -52,7 +52,7 @@ export default function CustomNavbar() {
           </a>
           <NavbarLink as={Link} to={linkLlegar} target="_blank">Como llegar</NavbarLink>
           {/* Link que abre el modal */}
-           <NavbarLink as="button" className="language-switcher"onClick={openLanguageModal}>Idioma</NavbarLink>
+          {/* <NavbarLink as="button" className="language-switcher"onClick={openLanguageModal}>Idioma</NavbarLink> */ } 
         </NavbarCollapse>
       </Navbar>
 
